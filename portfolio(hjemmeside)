@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lære mere om mig</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a1a3d;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 1rem 2rem;
+      gap: 1rem;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+    }
+
+    header h2 {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      background: #e3e3e3;
+      padding: 20px;
+      width: 220px;
+      min-height: 500px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #1a1a3d;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: block;
+    }
+
+    nav ul li a:hover {
+      background-color: #1a1a3d;
+      color: white;
+    }
+
+    section {
+      display: flex;
+      gap: 2rem;
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    article {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      flex-grow: 1;
+    }
+
+    article h1 {
+      margin-top: 0;
+      color: #1a1a3d;
+    }
+
+    footer {
+      background-color: #1a1a3d;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    .link-container {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .link-container li a {
+      color: white;
+      text-decoration: none;
+      padding-bottom: 3px;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .link-container li a.underline-link:hover {
+      border-bottom-color: #f4b41a;
+    }
+
+   @media (max-width: 768px) {
+      section {
+        flex-direction: column;
+      }
+
+      nav {
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 1rem;
+      }
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      gap: 2rem;
+    }
+      .github-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 16px;
+      background-color: #1a1a3d;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 450;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAIAAACcD8xoAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgUlEQVR4nO3aQU7DMBQE0Ho1go3/v7xFNYIs9xO+aBv9bsCU0Jx3vsnmDlI+QbzGOiPeC7L2sjpVyBYHpw/JRhQAXAh4CuXx+V8K/VuXANALShQXn5zUDqN2HgX+DyCDHVXYxQUVw24NYPBAcf5AY7sDj2MB2RY8GwaGnIwfDZayLqCkpRuANh5Rdxg8LpLeJbIgygJwnH/5cuVw2AqAn1eAY1cY/nWBl6SrndG+G3xbqp3H53+1IgfArOZdb+nRzTsLW+R0z0KQCV1vG4DOu58HQh/nl6PMlTzzlBqQ4bAO5TgLj+sF3jhAjFbZ0EsgOq8g7CswfV5XCyo6tHc+cN0Gv/tBg4/lmG8XwP4HL/7L9CL5PsP3Npx4kvepL1A+qf4N2XYfQbAuY/gFePJ+Xz7Qvsdf9Fnq41x5SCBAgQIECAAAECBAgQIECgB/kApn08G8Kj3bQAAAABJRU5ErkJggg==" alt="Profilbillede Zamzam Ali" />
+    <h2>Zamzam Ali</h2>
+  </header>
+
+  <section>
+    <div class="container"></div>
+    <nav>
+      <ul>
+          <a href="" target="" class="github-link">Om mig</a>
+         <li><a href="projekter.html">projekter</a></li>  
+        <li><a href="CV.html">CV</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Om mig</h1>
+      <br>
+      <h4>generelt om mig</h4>
+      <p>Jeg er en 16-årig pige, der godt kan lide at prøve nye ting og lære mere. I min fritid nyder jeg at være sammen med familie og venner, men nogle gange foretrækker jeg også bare at slappe af med musik i ørerne og en stille dag for mig selv.</p>
+<br>
+  <h4>hvorfor programmering? </h4>
+      <p>Jeg elsker følelsen af at forstå en ny interesse, men samtidig stadig have lyst til at lære mere – sådan har jeg det med programmering. Min interesse begyndte i folkeskolen, hvor vi havde et forløb med programmet Scratch. Jeg engagerede mig mere end de andre i min gruppe, og kort efter fik jeg en uges praktikplads hos Unity. Det var der, jeg indså, at jeg bare måtte lære endnu mere om kodning.</p>
+<br>
+  <h4>beskrivelse af mig </h4>
+      <p>Hvis jeg skulle beskrive mig selv, ville jeg bruge ordene: venlig, tålmodig og nysgerrig. Hvis mine venner skulle beskrive mig, ville de nok sige, at jeg er sød, glad og tænker positivt. I en mere professionel sammenhæng ville jeg blive beskrevet som lærenem, nysgerrig og engageret.</p>
+    </article>
+  </section>
+
+  <footer>
+    <h2>Kontakt</h2>
+    <ul class="link-container">
+      <li>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zamzam.ali1246@gmail.com" target="_blank" class="underline-link">gmail</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/zamzam-ali-1a2b53322/" target="_blank" class="underline-link">LinkedIn</a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+</html>
